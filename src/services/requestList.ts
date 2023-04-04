@@ -6,7 +6,7 @@ import cookie from 'react-cookies';
 
 export const getResource = () => axios.get(`/api/resource`);
 
-const prefix = "http://192.168.43.133:9090/DataBase/V1/";
+const prefix = "//192.168.43.133:9090/DataBase/V1/";
 //const prefix = "http://110.42.214.206:9090/DataBase/V1/";
 
 // 登陆注册接口

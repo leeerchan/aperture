@@ -7,7 +7,7 @@ import cookie from 'react-cookies';
 export const getResource = () => axios.get(`/api/resource`);
 
 //const prefix = "http://192.168.43.133:8080/DataBase/V1/";
-const prefix = "https://110.42.214.206:9090/DataBase/V1/";
+const prefix = "http://110.42.214.206:9090/DataBase/V1/";
 
 // 登陆注册接口
 export const registerUser = (email: String, pwd: String) => axios.post(`${prefix}registerUser`, 

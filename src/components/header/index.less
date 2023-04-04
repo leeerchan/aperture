@@ -1,0 +1,177 @@
+.header{  // 顶部导航栏
+  width: calc(100% - 32px);
+  height: 24px;
+  background: linear-gradient(to right, #c4ccff, #ffffff);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px 8px 16px;
+  color: var(--dark-color);
+}
+
+.header_l_ctn{  // 左侧图标
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  letter-spacing: 1px;
+  .logo{  // REAI的logo
+    font-size: 20px;
+    font-family: 'PingFang';
+    letter-spacing: 1px;
+    color: #1677fe;
+  }
+}
+
+.header_m_ctn{  // 中间图标
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.header_m_ctn .picker-ctn{
+  position: relative;
+  .setting-item{  // 控制画笔和橡皮大小的滑条
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    top: 36px;
+    right: -100px;
+    z-index: 30000;
+    background-color: white;
+  }
+}
+.header_m_ctn .picker-ctn:hover{
+  cursor: pointer;
+}
+.header_m_ctn .picker-btn{  // 中部的按钮样式
+  margin: 0;
+  height: 14px;
+  width: 14px;
+  border-radius: 20px;
+  display: flex;
+  border: #eeeeee solid 2px;
+  background-color: #eeeeee;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease;
+}
+.header_m_ctn .picker-btn:hover{
+  cursor: pointer;
+}
+
+.header_r_ctn{  // 右侧图标
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  .header_btn{  // 放置在右侧的按钮
+    top: 0px;
+    height: 30px;
+    font-family: 'PingFang';
+    font-size: 12px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  .header_btn:hover{
+    cursor: pointer;
+  }
+  .userInfo{  // 个人名字和邮箱的显示
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    font-family: 'PingFang';
+    justify-content: center;
+    text-align: right;
+    gap: 0px;
+  }
+  .downInfo{  // 头像右侧的下拉框
+    color: #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    height: 24px;
+    justify-content: center;
+    text-align: right;
+  }
+  .downInfo:hover{
+    cursor: pointer;
+  }
+}
+
+.avatar{  // 主页右上角显示的头像
+  height: 25px;
+  width: 25px;
+  border-radius: 25px;
+}
+.avatar:hover{
+  cursor: pointer;
+}
+.downItem{  // 在主页右上角点击下拉框显示的内容
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px 5px 0px 5px;
+  width: 100px;
+  font-family: 'PingFang';
+  justify-content: center;
+  text-align: left;
+}
+.downItem:hover{
+  cursor: pointer;
+}
+
+.modal{  // 更改个人信息对话框
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.modal_col{  // 更改个人信息对话框右栏
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+  text-align: left;
+  padding: 8px;
+  gap: 10px;
+  height: 200px;
+}
+.modal_col_left{  // 更改个人信息对话框左栏
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  padding: 8px;
+  gap: 10px;
+  height: 200px;
+}
+.avatar_show{  // 更改个人信息时的头像样式
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.history_img{  // 历史生成记录中，参考图片样式
+  object-fit: contain;
+  width: 200px;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(200, 200, 200, 0.5);
+}
+.design_img{  // 历史记录的所有项目中，项目截图样式
+  object-fit: contain;
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(200, 200, 200, 0.5);
+}
+

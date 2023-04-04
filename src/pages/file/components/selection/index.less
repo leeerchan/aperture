@@ -1,0 +1,120 @@
+.select_ctn{
+  position: relative;
+  height: 100%;
+  border-color: var(--color-border);
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  transition: all 500ms ease;
+}
+.select_bar_ctn{
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index: 10;
+  width: 48px;
+  height: calc(100% - 40px);
+  background-color: white;
+  border-color: var(--color-border);
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .tab_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.option_btn{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 15px;
+  gap: 0px;
+}
+.option_btn-focused{
+  background-color: var(--color-border);
+}
+.option_btn:hover{
+  background-color: var(--color-border);
+  cursor: pointer;
+}
+
+.select_list_ctn{
+  transition: all 500ms ease;
+  z-index: 1;
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  .select_blank_box{
+    width: 48px;
+    height: 100%;
+  }
+  .select_list{
+    width: 352px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    overflow-y: scroll;
+  }
+}
+
+.select_list_grid-one{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+  margin: 8px;
+  }
+.select_list_grid-two{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  margin: 8px;
+}
+.select_list_item{
+  width: 100%;
+  height: 120px;
+  background-color: var(--color-border);
+  border-radius: 6px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.select_list_item:hover{
+  cursor: pointer;
+}
+.bottom_blank_box{
+  width: 100%;
+  height: 100%;
+}
+
+.top_menu{
+  grid-gap: 8px;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 0px;
+  font-family: 'PingFang';
+}
+.search_input{
+  grid-gap: 8px;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 0px;
+}
+
+
+
+

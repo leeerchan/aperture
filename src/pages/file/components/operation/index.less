@@ -1,0 +1,82 @@
+.operate_ctn{
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: var(--color-background);
+}
+.prompt_ctn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  height: auto;
+  width: calc(100% - 48px);
+  margin: 24px;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 0px 0px 0px;
+}
+
+.start_ctn{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: auto;
+  width: 528px;
+  height: 256px;
+  gap: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.upload_ctn{
+  height: 256px;
+  width: 352px;
+  margin: 4px;
+  border-radius: 8px;
+}
+.start_paint_btn{
+  height: 256px;
+  width: 176px;
+  margin: 4px;
+  border-radius: 8px;
+  border-color: var(--color-border);
+  border-width: 1px;
+  border-style: dashed;
+  transition: all 300ms ease;
+}
+.start_paint_btn:hover{
+  border-color: #1677ff;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  overflow: hidden;
+  margin: 40px auto 0;
+
+}
+.target{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: fix-content;
+  //max-width: 400px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 0px 0px 0px;
+  .img{
+    width: 100%;
+    height: 100%;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+  }
+}

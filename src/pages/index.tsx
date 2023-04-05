@@ -37,7 +37,7 @@ const index = () => {
         </Header>
         <Content style={{background: 'white'}}>
           <div className="site-layout-content">
-            <img src={"http://127.0.0.1:8887/upload/show.jpg"}/>
+            <img src={"http://110.42.214.206:9080/upload/show.jpg"}/>
           </div>
         </Content>
         <Footer style={{textAlign: 'center', background: 'white'}}>Aperture Design ©2023 Created by IABC lab</Footer>
